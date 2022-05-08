@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 // const ObjectId = Schema.Types.ObjectId;
 // const Mixed = Schema.Types.Mixed;
 
-var pokedexSchema = Schema( {
+var pokemonSchema = Schema( {
   id: Number,
   num: String,
   name:String,
@@ -22,4 +22,4 @@ var pokedexSchema = Schema( {
   next_evolution: [{num: String, name: String}]
 } );
 
-module.exports = mongoose.model( 'pokedexSchema', items );
+module.exports = mongoose.model( 'pokemonSchema', items );
