@@ -1,16 +1,14 @@
 
 
     <div class="jumbotron">
-        <h1>PA03: Course Finder Fall20-Spr21 </h1>
+        <h1>CPA02: Course Finder Fall20-Spr21 </h1>
         <p></p>
     </div>
 
     <p class="p-3 m-3 border border-primary bg-light">
-        The goal of this assignment is to write an app that will let
-        students pick their courses for the year. Since we don't have 
-        the data for this year (due to workday issues), we will use the 
-        2020-2021 Academic year data. You must signup or login to see
-        the courses and create your schedule.
+        I will be modifying and adding some of my own features to pa03. Initially tried to make a webapp
+        to search a Pokemon Pokedex but I was not able to get it to work and in the interest of time, I thought it would
+        be best if I updated this instead.
     </p>
     
     <% if (true || loggedIn) {%>  
@@ -35,6 +33,12 @@
             <input type="submit">
         </form>
         <br>
+        <form method="post" action="/courses/byNum">
+            Show courses by their number:
+            <input type="number" name="limit"
+                placeholder="e.g. 10a">
+                <input type="submit">
+        </form>
         <a href="/schedule/show">Show Schedule</a>
     <% } %>
 
