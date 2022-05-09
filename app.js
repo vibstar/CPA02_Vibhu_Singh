@@ -318,7 +318,7 @@ app.post('/courses/byKeyword',
 app.post('/courses/byNum',
   // show list of courses in a given subject
   async (req, res, next) => {
-    const limit = req.body.courseNum;
+    const limit = req.body.limit;
     const courses = await Course.find({ limit: {$lt: limit}, independent_study: false })
 
     res.locals.courses = courses
