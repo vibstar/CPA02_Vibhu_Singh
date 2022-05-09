@@ -6,7 +6,7 @@ these are useful things to be able to use to search.
 
 After a search, it pulls up a table of all of the results that matched the query, as shown below.
 
-[screenshot of app](./public/images/screenshot%20of%20app.png =100x)
+![](./public/images/screenshot%20of%20app.png =100x)
 
 
 ## [Video of app](https://youtu.be/xT71n-1rCII)
